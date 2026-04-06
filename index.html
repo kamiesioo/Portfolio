@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
@@ -10,21 +15,87 @@
       <div class="logo">Portfolio</div>
       <nav>
         <ul class="nav-links">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Mi</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#" class="inicio">Inicio</a></li>
+          <li><a href="#" class="sobre-mi">Sobre Mi</a></li>
+          <li><a href="#" class="servicios">Servicios</a></li>
+          <li><a href="#" class="contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <section id="sobre-mi">
       <h2>Sobre Mi</h2>
-      <img src="mifoto.png" alt="" />
       <p>
         Me llamo Ulises Cena, futuro Analista de Sistemas y Desarrollador Full
         Stack
       </p>
       <p>Me especializo en HTML, CSS, JavaScript, NodeJS y MySQL</p>
+      <img src="mifoto.png" alt="Foto-Personal" />
+      <p>TIME ZONE: UTC-3</p>
     </section>
+    <section id="servicios">
+      <h2>Mis Servicios</h2>
+
+      <div class="contenedor-servicios">
+        <!-- Servicio 1 -->
+        <div class="servicio-item">
+          <img src="icono-diseno.png" alt="Diseño Web" />
+          <h3>Desarrollo Web</h3>
+          <p>Creo sitios web modernos y funcionales.</p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="servicio-item">
+          <img src="icono-seo.png" alt="SEO" />
+          <h3>Asesoramiento Personalizado</h3>
+          <p>Mejoro tu perspectiva respecto a tu negoocio y necesidades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Habilidades">
+      <h2>Habilidades</h2>
+
+      <div class="contenedor-habilidades">
+        <h3>Habilidades desarrolladas.</h3>
+        <p>
+          Manejo de lenguajes basados en Front-End y Back-End (HTML 5 | CSS 3 |
+          JavaScript | NodeJS | MySQL).
+        </p>
+        <p>
+          Mantengo un pensamiento crítico y lógico en todo momento, tengo como
+          objetivo en mis proyectos/trabajos permanecer dentro de las
+          espectativas y exigencias que pido o pide el cliente.
+        </p>
+      </div>
+    </section>
+    <section id="Contacto">
+      <h2>Contactame.</h2>
+
+      <div class="contacto">
+        <!-- LinkedIn -->
+        <section id="contacto">
+          <h2 class="texto-contacto">Contactame.</h2>
+          <div class="contacto-lista">
+            <div class="contacto-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <h4>LinkedIn</h4>
+            </div>
+
+            <div class="contacto-item">
+              <i class="fa-brands fa-github"></i>
+              <h4>GitHub</h4>
+            </div>
+
+            <div class="contacto-item">
+              <i class="fa-brands fa-discord"></i>
+              <h4>Discord</h4>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer id="footer">
+      <p>Web dessigned by kamiesio | All Rights Reserved 2026 ©.</p>
+    </footer>
   </body>
 </html>

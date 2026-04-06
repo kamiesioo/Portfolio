@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.nav-links {
+  display: flex;
+  list-style-type: none; /* Quita viñetas [1] */
+  gap: 15px;
+}
+
+.inicio {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.sobre-mi {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.servicios {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.contacto {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+/* Selecciona todas las secciones */
+section {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+}
+
+.contacto-item {
+  color: black;
+}
+
+.texto-contacto {
+  color: black;
+  text-decoration: underline;
+}
+
+#footer {
+  padding: 25px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Forzar la carga de iconos de marcas */
+.fa-brands {
+  font-family: "Font Awesome 6 Brands" !important;
+  font-style: normal;
+  vertical-align: middle;
+  font-size: 2rem; /* Esto los hace más grandes */
+}
+
+/* Estilo para los items de contacto */
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contacto-item h4 {
+  margin: 0;
+}
