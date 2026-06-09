@@ -1,0 +1,299 @@
+/* --- NAVBAR --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 0 40px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+/* --- SECCIONES GENERALES --- */
+section {
+  padding: 60px 40px;
+  background-color: var(--bg-section);
+  border-bottom: 1px solid var(--border);
+}
+
+/* --- SOBRE MI --- */
+#sobre-mi {
+  text-align: center;
+  background-color: var(--bg);
+}
+
+#sobre-mi img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; /* Hace la imagen circular para un look minimalista */
+  margin: 20px 0;
+  border: 3px solid var(--border);
+}
+
+#sobre-mi p:last-child {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--text);
+  margin-top: 10px;
+}
+
+/* --- SERVICIOS --- */
+.contenedor-servicios {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicio-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1 1 300px; /* Crece para ocupar espacio, mínimo 300px */
+  max-width: 400px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.servicio-item:hover {
+  transform: translateY(-5px); /* Efecto sutil al pasar el ratón */
+}
+
+.servicio-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  filter: grayscale(100%); /* Hace los íconos grises por defecto */
+  opacity: 0.8;
+}
+
+.servicio-item:hover img {
+  filter: grayscale(0%); /* Al pasar el ratón, toman su color original */
+  opacity: 1;
+}
+
+/* --- PROYECTOS --- */
+#proyectos {
+  background-color: var(--bg);
+}
+
+.contenedor-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.proyecto-item {
+  background: var(--bg-section);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden; /* MUY IMPORTANTE: Hace que la imagen no se salga de los bordes redondeados */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: var(--shadow);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.proyecto-item:hover {
+  border-color: var(--accent);
+}
+
+/* --- NUEVO: CONTENEDOR MULTIMEDIA --- */
+.proyecto-media {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Mantiene proporción de pantalla widescreen */
+  background-color: #111111; /* Fondo negro mientras carga el GIF/Video */
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  /* Estos márgenes negativos hacen que la imagen toque los bordes de la tarjeta, 
+     pero respetando el padding de 25px en el texto que está abajo */
+  margin: 0px -1px -1px -1px;
+}
+
+.proyecto-media img,
+.proyecto-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Evita que la imagen se deforme, la recorta sutilmente si es necesario */
+  transition: transform 0.5s ease;
+}
+
+.proyecto-item:hover .proyecto-media img,
+.proyecto-item:hover .proyecto-media video {
+  transform: scale(1.05); /* Zoom cinematográfico sutil al pasar el ratón */
+}
+
+/* --- INFO DEL PROYECTO --- */
+.proyecto-info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que las tags se empujen hacia abajo */
+}
+
+.proyecto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.proyecto-icon {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+
+.proyecto-links a {
+  color: var(--text);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.proyecto-links a:hover {
+  color: var(--accent);
+}
+
+.proyecto-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--text-h);
+}
+
+.proyecto-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 20px;
+  flex-grow: 1; /* Empuja las tags hacia la base de la tarjeta */
+}
+
+.proyecto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 11px;
+  font-family: var(--mono);
+  padding: 4px 10px;
+  border-radius: 4px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- HABILIDADES --- */
+#habilidades {
+  background-color: var(--bg);
+}
+
+.contenedor-habilidades {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  background: var(--bg-section);
+  padding: 30px;
+  border-left: 4px solid var(--accent); /* Detalle visual sutil y profesional */
+}
+
+/* --- CONTACTO --- */
+#contacto {
+  text-align: center;
+  background-color: var(--bg-section);
+}
+
+.texto-contacto {
+  text-decoration: underline;
+  text-underline-offset: 5px; /* Separa el subrayado del texto */
+}
+
+.contacto-lista {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contacto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-h);
+  transition: transform 0.3s ease;
+}
+
+.contacto-item:hover {
+  transform: scale(1.1);
+}
+
+.fa-brands {
+  font-size: 2.5rem;
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
+
+.contacto-item:hover .fa-brands {
+  color: #000000;
+}
+
+.contacto-item h4 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* --- FOOTER --- */
+#footer {
+  background-color: #111;
+  color: #cccccc;
+  padding: 20px 40px;
+  text-align: center;
+  font-size: 12px;
+  margin-top: auto; /* Empuja el footer hacia abajo si el contenido es poco */
+  letter-spacing: 0.5px;
+}

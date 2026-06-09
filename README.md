@@ -1,36 +1,31 @@
-# Portfolio
+# Portfolio - Ulises Cena
 
-Proyecto personal para mostrar mis habilidades, página construida 100% de forma manual, satisfaciendo mi necesidad de mostrar cual es mi estilo y forma de trabajo dentro de código
+Proyecto personal para mostrar mis habilidades, satisfaciendo mi necesidad de exponer cuál es mi estilo y forma de trabajo en código.
 
-# HTML
+## Enfoque de desarrollo
 
-Busco un estilo minimalista, conservando el detalle y cuidado visual para mostrar las herramientas utilizadas sin que se vuelva algo molesto e intrusivo a la vista.
+**Componentes (React/JSX)**
+Busco un estilo minimalista, conservando el detalle y cuidado visual para mostrar las herramientas utilizadas sin que se vuelva algo molesto e intrusivo a la vista. La migración a React permite estructurar la interfaz en componentes independientes, manteniendo el orden del código sin alterar la estética planteada originalmente.
 
-# CSS
+**Estilos (CSS)**
+Mantengo colores monocromáticos los cuales pretenden darle un aspecto profesional, siguiendo la línea trazada en la estructura con el estilo minimalista. Todas las secciones comparten la misma paleta de colores y están separadas visualmente. Se aplicaron las configuraciones necesarias en la barra de navegación para cumplir con la distribución requerida, y se integró la librería React Icons para garantizar iconos legibles y consistentes en la sección de contacto.
 
-Mantengo colores monocromaticos los cuales pretendo que le den un aspecto profesional y seguir la linea trazada en el HTML con el estio minimalista.
+## Estructura del sitio
 
-# PLANTEAMIENTO
+- **Barra de navegación:** Logo e identidad a la izquierda, accesos a las secciones a la derecha.
+- **Sobre Mi:** Información personal, perfil profesional y zona horaria.
+- **Servicios:** Breve descripción de las habilidades ofrecidas.
+- **Habilidades:** Lenguajes manejados, pensamiento crítico y lógico, y el objetivo de mantener el estilo y demandas respecto a lo que busca el cliente.
+- **Contacto:** Enlaces directos a LinkedIn, Discord y GitHub.
+- **Footer:** Derechos reservados.
 
-lista con servicios y contacto
+## Instalación y uso
 
-HTML
+Requisitos previos: Node.js instalado.
 
-Barra de navegación: Imagen a la derecha, izquierda para las secciones
+```bash
+npm install
+npm run dev
+```
 
-Sobre Mi: Info
-
-Servicios: Luego una breve descripcion de que se hacer, lenguajes dominados y futuros proyectos
-
-Habilidades: Lenguajes, pensamiento crítico, mantener el estilo respecto a lo que busca el cliente, etc, etc
-
-Contacto: LinkedIn, Discord y GitHub
-
-Footer: Derechos
-
-CSS
-Todas las secciones van a tener el mismo color y van a estar separadas
-
-configuraciones para la barra de navegacion para cumplir lo que se pide en el HTML
-
-agregar iconos que sean legibles en contacto
+El servidor de desarrollo se iniciará en el puerto local correspondiente.
